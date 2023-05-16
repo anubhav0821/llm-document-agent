@@ -13,7 +13,7 @@ from langchain.agents.agent_toolkits import (
 
 
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'enter your you key to use the app'
 
 llm = OpenAI(temperature=0.1)
 
