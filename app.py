@@ -1,7 +1,7 @@
 import os
 from langchain.llms import OpenAI
 import streamlit as st
-
+#Will need to install the dependencies again
 from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import Chroma
 
@@ -35,8 +35,8 @@ agent_executor = create_vectorstore_agent(
     verbose=True
 )
 
-st.title('🦜🔗 GPT Investment Banker')
-prompt = st.text_input("Input your prompt here")
+st.title('🦜🔗 GPT Investment Banker Based On Report')
+prompt = st.text_input("Input your prompt here") + ' and if you do not know the answer, try no to halucinate and just say that you lack the information'
 
 
 
